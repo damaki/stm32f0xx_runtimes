@@ -1,7 +1,7 @@
 # STM32F0xx Runtimes
 
-This repository generates Ada/SPARK runtimes that support all MCUs in the
-STM32F0 family.
+This repository generates GNAT runtimes that support all MCUs in the STM32F0
+family.
 
 The following runtime profiles are supported:
 * light
@@ -17,6 +17,8 @@ Using the `light-tasking-stm32f0xx` runtime as an example, first edit your
    [[depends-on]]
    light_tasking_stm32f0xx = "*"
    ```
+ - if applicable, apply any runtime configuration variables
+   (see "Runtime Configuration" below).
 
 Then edit your project file to add the following elements:
  - "with" the run-time project file:

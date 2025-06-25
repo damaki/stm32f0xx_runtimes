@@ -18,6 +18,8 @@ project Ravenscar_Build is
 
    for Source_Dirs use ("gnarl_user", "gnarl");
 
+   --  Exclude sources that are not needed for the specified MCU config
+
    Excluded_Sources := ();
 
    case Runtime_Build.MCU_Sub_Family_Minor is

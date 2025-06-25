@@ -11,6 +11,7 @@ First edit your `alire.toml` file and add the following elements:
    [[depends-on]]
    $(profile_underscored)_$(target) = "*"
    ```
+ - if applicable, apply any runtime configuration variables (see below).
 
 Then edit your project file to add the following elements:
  - "with" the run-time project file. With this, gprbuild will compile the run-time before your application
